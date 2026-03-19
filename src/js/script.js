@@ -37,3 +37,18 @@ document.addEventListener("click", function (e) {
     navMenu.classList.add("hidden");
   }
 });
+
+emailjs.init("I54FVVhlAi1CA5DWW");
+
+document.querySelector("form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_85nl8ee", "template_ylmsc8f", this).then(
+    () => {
+      alert("Pesan terkirim!");
+    },
+    (err) => {
+      alert("Gagal kirim");
+    },
+  );
+});
