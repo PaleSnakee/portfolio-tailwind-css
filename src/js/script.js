@@ -38,23 +38,21 @@ document.addEventListener("click", function (e) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  emailjs.init("I54FVVhlAi1CA5DWW");
+emailjs.init("I54FVVhlAi1CA5DWW");
 
-  document
-    .getElementById("contact-form")
-    .addEventListener("submit", function (e) {
-      e.preventDefault();
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
 
-      emailjs.sendForm("service_85nl8ee", "template_ylmsc8f", this).then(
-        function () {
-          alert("Pesan berhasil dikirim!");
-          this.reset();
-        },
-        function (error) {
-          alert("Pesan gagal dikirim!");
-          console.log("EmailJS Error:", error);
-        },
-      );
-    });
-});
+    emailjs.sendForm("service_85nl8ee", "template_ylmsc8f", this).then(
+      () => {
+        alert("Pesan berhasil dikirim!");
+        this.reset(); // ini yang bikin form kosong lagi
+      },
+      (error) => {
+        alert("Pesan gagal dikirim!");
+        console.log("EmailJS Error:", error);
+      },
+    );
+  });
