@@ -263,9 +263,10 @@
               Latest Project
             </h2>
             <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              illum quibusdam labore explicabo laboriosam similique cumque. Non
-              eaque nostrum tempora.
+              Berikut beberapa project yang telah saya kerjakan, mulai dari
+              pengembangan web hingga aplikasi mobile. Setiap project dibangun
+              dengan fokus pada fungsionalitas, performa, dan pengalaman
+              pengguna.
             </p>
           </div>
         </div>
@@ -283,10 +284,10 @@
               Landing Page Sistem Informasi Akademik Mahasiswa
             </h3>
             <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem tenetur perspiciatis, iure ratione repellat, maxime
-              voluptatem dolorum debitis aperiam, iusto maiores provident.
-              Aperiam soluta quod expedita, repellendus dolor aliquid sint.
+              Landing page untuk sistem informasi akademik yang dirancang untuk
+              memudahkan mahasiswa dalam mengakses data perkuliahan seperti
+              jadwal, nilai, dan informasi penting lainnya. Dibangun dengan
+              tampilan responsif dan user-friendly.
             </p>
           </div>
           <div class="mb-12 p-4 md:w-1/2">
@@ -302,42 +303,10 @@
               Android App Resep Digital
             </h3>
             <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem tenetur perspiciatis, iure ratione repellat, maxime
-              voluptatem dolorum debitis aperiam, iusto maiores provident.
-              Aperiam soluta quod expedita, repellendus dolor aliquid sint.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img
-                src="src/img/1.jpg"
-                alt="Sistem Informasi Akademik Mahasiswa"
-                width="w-full"
-              />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
-              Landing Page Sistem Informasi Akademik Mahasiswa
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem tenetur perspiciatis, iure ratione repellat, maxime
-              voluptatem dolorum debitis aperiam, iusto maiores provident.
-              Aperiam soluta quod expedita, repellendus dolor aliquid sint.
-            </p>
-          </div>
-          <div class="mb-12 p-4 md:w-1/2">
-            <div class="rounded-md shadow-md overflow-hidden">
-              <img src="src/img/1.jpg" alt="Landing Page" width="w-full" />
-            </div>
-            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
-              Landing Page Sistem Informasi Akademik Mahasiswa
-            </h3>
-            <p class="font-medium text-base text-secondary">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem tenetur perspiciatis, iure ratione repellat, maxime
-              voluptatem dolorum debitis aperiam, iusto maiores provident.
-              Aperiam soluta quod expedita, repellendus dolor aliquid sint.
+              Aplikasi Android yang menyediakan berbagai resep masakan lengkap
+              dengan langkah-langkah yang mudah diikuti. Dilengkapi fitur
+              pencarian dan kategori untuk membantu pengguna menemukan resep
+              dengan cepat dan praktis.
             </p>
           </div>
         </div>
@@ -346,7 +315,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Cliensts Section Start -->
-    <section id="clients" class="pt-36 pb-32 bg-slate-600">
+    <!-- <section id="clients" class="pt-36 pb-32 bg-slate-600">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto text-center mb-16">
@@ -383,11 +352,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Clients Section End -->
 
     <!-- Blog Section Start -->
-    <section id="blog" class="pt-36 pb-32 bg-slate-100">
+    <!-- <section id="blog" class="pt-36 pb-32 bg-slate-100">
       <div class="container">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -484,7 +453,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Blog Section End -->
 
     <!-- Contact Section Start -->
@@ -501,14 +470,14 @@
               Get In Touch
             </h2>
             <p class="font-medium text-md text-secondary md:text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-              illum quibusdam labore explicabo laboriosam similique cumque. Non
-              eaque nostrum tempora.
+              Saya terbuka untuk peluang kerja, kolaborasi, atau sekadar diskusi
+              seputar teknologi dan pengembangan web. Jangan ragu untuk
+              menghubungi saya melalui form ini.
             </p>
           </div>
         </div>
 
-        <form action="">
+        <form action="" method="post">
           <div class="w-full lg:w-2/3 lg:mx-auto">
             <div class="w-full px-4 mb-8">
               <label for="name" class="text-base font-bold text-primary">
@@ -517,6 +486,7 @@
               <input
                 id="name"
                 type="text"
+                name="name"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
@@ -527,11 +497,16 @@
               <input
                 id="email"
                 type="email"
+                name="email"
                 class="w-full bg-slate-200 text-dark p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
               />
             </div>
             <div class="w-full px-4 mb-8">
-              <label for="message" class="text-base font-bold text-primary">
+              <label
+                for="message"
+                name="message"
+                class="text-base font-bold text-primary"
+              >
                 Message
               </label>
               <textarea
@@ -542,6 +517,7 @@
             </div>
             <div class="w-full px-4">
               <button
+                type="submit"
                 class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full w-full hover:opacity-80 hover:shadow-lg transition duration-500"
               >
                 Send
