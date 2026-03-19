@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       emailjs.sendForm("service_85nl8ee", "template_ylmsc8f", this).then(
         function () {
           alert("Pesan berhasil dikirim!");
+          this.reset();
         },
         function (error) {
           alert("Pesan gagal dikirim!");
