@@ -40,15 +40,18 @@ document.addEventListener("click", function (e) {
 
 emailjs.init("I54FVVhlAi1CA5DWW");
 
-document.querySelector("form").addEventListener("submit", function (e) {
-  e.preventDefault();
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (e) {
+    e.preventDefault();
 
-  emailjs.sendForm("service_85nl8ee", "template_ylmsc8f", this).then(
-    () => {
-      alert("Pesan terkirim!");
-    },
-    (err) => {
-      alert("Gagal kirim");
-    },
-  );
-});
+    emailjs.sendForm("service_85nl8ee", "template_ylmsc8f", this).then(
+      function () {
+        alert("Pesan berhasil dikirim!");
+      },
+      function (error) {
+        alert("Pesan gagal dikirim!");
+        console.log("EmailJS Error:", error);
+      },
+    );
+  });
